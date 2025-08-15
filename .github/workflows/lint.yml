@@ -10,6 +10,11 @@ on:
     branches:
       - prod
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 jobs:
   run-linters:
     name: Run linters
